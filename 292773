@@ -1,0 +1,20 @@
+<bug>
+  <bug_id>292773</bug_id>
+  <short_desc>[TASK] Use get_provides/update_patterns in SR image build</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>285068</blocked>
+  <estimated_time>2.50</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3435127</commentid>
+    <thetext>update_patterns was split in two participants.
+
+The part of SRCSRV_REQUEST_CREATE.BOSS_handle_SR.pdef in do_image_build which updates the patterns needs to be adapted to this.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3437286</commentid>
+    <thetext>estimating 2.5 per pami</thetext>
+  </long_desc>
+</bug>
+
+

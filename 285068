@@ -1,0 +1,29 @@
+<bug>
+  <bug_id>285068</bug_id>
+  <short_desc>[FEA] image creation automation</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <dependson>285075</dependson>
+  <dependson>288704</dependson>
+  <dependson>292773</dependson>
+  <dependson>295287</dependson>
+  <dependson>285070</dependson>
+  <dependson>285071</dependson>
+  <dependson>291044</dependson>
+  <blocked>282097</blocked>
+  <estimated_time>0.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3328067</commentid>
+    <thetext>The purpose of this feature is to make image creation less of a "thing" in its own right, and more something that happens automatically as part of a build. In other words, get rid of the need for a separate UI for it. We might still want an UI for monitoring but it shouldn't be necessary for normal use.
+
+Part of this feature used to be that image configuration information has to be kept in packages, so that changes it can be integrated and tested just like any package change. Fortunately it's already packaged that way in CE so the only tasks needed are the ones for using that information.
+
+Demo: submit a changed image-configuration or package-groups package to our testing project, and see that multiple images are built in response.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3328737</commentid>
+    <thetext>Bug 285152 was cloned from this bug</thetext>
+  </long_desc>
+</bug>
+
+

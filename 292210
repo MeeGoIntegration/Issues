@@ -1,0 +1,55 @@
+<bug>
+  <bug_id>292210</bug_id>
+  <short_desc>[TASK] Update check_is_from_devel to support both field and parameter as well as the package's OBS Devel flag</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <estimated_time>7.50</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3427720</commentid>
+    <thetext>Include participant "check_is_from_devel" in precheck of process conf (check_is_from_devel)
+
+Submit a request.
+
+Following error is displayed
+============================
+
+2011-11-22 11:31:32.283598500 Exception in participant check_is_from_devel
+2011-11-22 11:31:32.283686500 while handling instance 20111122-bepahawagi of process BOSS_handle_SR 
+2011-11-22 11:31:32.318386500 ------------------------------------------------------------------------------
+2011-11-22 11:31:32.318388500 Traceback (most recent call last):
+2011-11-22 11:31:32.318389500   File "/usr/lib/pymodules/python2.6/RuoteAMQP/participant.py", line 54, in run
+2011-11-22 11:31:32.318391500     self.__participant.consume()
+2011-11-22 11:31:32.318392500   File "/usr/lib/python2.6/dist-packages/SkyNET/Exo.py", line 55, in consume
+2011-11-22 11:31:32.318394500     self.exo.handler.handle_wi(self.workitem)
+2011-11-22 11:31:32.318395500   File "/usr/share/boss-skynet/check_is_from_devel.py", line 68, in handle_wi
+2011-11-22 11:31:32.318410500     raise RuntimeError("Missing mandatory param 'regexp'")
+2011-11-22 11:31:32.318411500 RuntimeError: Missing mandatory param 'regexp'
+2011-11-22 11:31:32.318413500 
+2011-11-22 11:31:32.318414500 ------------------------------------------------------------------------------
+2011-11-22 11:31:32.318416500 Note: for information only. Participant remains functional.
+2011-11-22 11:31:32.318417500       Error is being signalled to the workflow (unless this 
+2011-11-22 11:31:32.318423500       workitem is 'forgotten').</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3468285</commentid>
+    <thetext>If there is no regexp and the package has no devel attribute, then the precheck should succeed anyway.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3461361</commentid>
+    <thetext>Re-estimated for new scope</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3461323</commentid>
+    <thetext>Comment from Markko [CE]:
+
+OBS has a devel project flag that can be set on packages. If it is set; use it as an indication of where the promotion should come from.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3437338</commentid>
+    <thetext>The regex could be a field as well and the parameter overrides the field. that way participants could be added to the precheck list.
+
+Later it will be thought what approach really to be taken when configuration is in obs.</thetext>
+  </long_desc>
+</bug>
+
+

@@ -1,0 +1,14 @@
+<bug>
+  <bug_id>283369</bug_id>
+  <short_desc>[TASK] Design OSC interface</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>283345</blocked>
+  <estimated_time>0.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3301490</commentid>
+    <thetext> description</thetext>
+  </long_desc>
+</bug>
+
+

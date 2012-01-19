@@ -1,0 +1,16 @@
+<bug>
+  <bug_id>295694</bug_id>
+  <short_desc>[TASK] Create LAMP package for imger</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287450</blocked>
+  <estimated_time>5.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3474350</commentid>
+    <thetext>Task: create an img-lamp package along the lines of revs-lamp, which sets up a working imger in one go using default components.
+
+As part of this task, convert img-web to using apache instead of lighttpd, for consistency with OBS 2.3 (which made the same switch).</thetext>
+  </long_desc>
+</bug>
+
+

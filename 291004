@@ -1,0 +1,23 @@
+<bug>
+  <bug_id>291004</bug_id>
+  <short_desc>[TASK] Work on Release Script</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <estimated_time>12.50</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3414719</commentid>
+    <thetext>The Release Script has following work
+
+ - Produce Release Notes
+ - Break the script to more manageable functions
+ - Remove redundant information from the report (like showing 0 build states for all repo arch combination, showing x fro not present, etc)
+ - Consider how pkg changes can be tracked when no version change is done
+ - Avoid downloading meta info if available, give choice</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3414725</commentid>
+    <thetext>estimation by me</thetext>
+  </long_desc>
+</bug>
+
+

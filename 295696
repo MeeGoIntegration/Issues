@@ -1,0 +1,18 @@
+<bug>
+  <bug_id>295696</bug_id>
+  <short_desc>[TASK] Create boss-standard-deployment package</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287450</blocked>
+  <estimated_time>5.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3474362</commentid>
+    <thetext>Create a package (probably in boss-standard-workflow) that sets up a working boss machine with default components: boss, skynet, standard workflow and its participants, boss-viewer, rabbitmq. No imger or obs or bugzilla, since those are likely to be on separate machines.
+
+(Rabbitmq might be on a separate machine, but I don't think we should make deployment more complicated just to make installing it optional. Someone who wants to use a different rabbitmq server can just turn off the one installed by this package.)
+
+Estimated at a full day because testing the deployment package will probably involve modifying the mint-appliance build to use it.</thetext>
+  </long_desc>
+</bug>
+
+

@@ -1,0 +1,21 @@
+<bug>
+  <bug_id>294702</bug_id>
+  <short_desc>[TASK] patch OBS to support deletion in project links</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <estimated_time>15.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3461115</commentid>
+    <thetext>The outcome of 292941 was that there is no current way to simulate a deletion request.
+
+The decision is to patch this functionality into OBS.
+
+The outcome of this task could be :
+
+* If a package is marked deleted from a project link mark it as deleted and make sure their reverse dependencies get rebuilt / or are marked as unresolved
+
+* Some way of resetting the package status to that of the link target project.</thetext>
+  </long_desc>
+</bug>
+
+

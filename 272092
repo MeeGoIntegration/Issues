@@ -1,0 +1,66 @@
+<bug>
+  <bug_id>272092</bug_id>
+  <short_desc>[TASK] [DESIGN] Define a E2E base process for this team using BOSS and Participants</short_desc>
+  <bug_status>REOPENED</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>274618</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3137755</commentid>
+    <thetext>Describe a process + needed participants to automate the OBS workflow for this team. Create tasks under bug 274618 for the implementation.
+
+Scope includes promotion from Devel projects to Testing and Trunk, pre-checks, possibly review, and automated testing along the way.
+
+Scope may include creation of release snapshots and deployment to demo systems.
+
+The expected output is a set of tasks and a design/requirements documentation e.g. in the wiki.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3465298</commentid>
+    <thetext>I'd like to see this part done before closing this bug:
+
+  "Create tasks under bug 274618 for the implementation."
+
+Currently there is only the "implement task 1" task but it lacks specifics; it should describe what actually has to be done.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3452402</commentid>
+    <thetext>someone review</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3450396</commentid>
+    <thetext>Worked on breaking work</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3436867</commentid>
+    <thetext>Bug to be carried forwarded to next sprint</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3436863</commentid>
+    <thetext>Added some more points.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3429363</commentid>
+    <thetext>https://projects.maemo.org/trac/meego-obs/wiki/MINTIntegrationAutomation</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3428963</commentid>
+    <thetext>taking</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3412393</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3410568</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3410567</commentid>
+    <thetext>Rewrote description to be a task</thetext>
+  </long_desc>
+</bug>
+
+

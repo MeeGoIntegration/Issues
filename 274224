@@ -1,0 +1,14 @@
+<bug>
+  <bug_id>274224</bug_id>
+  <short_desc>[TASK] SkyNET list operation should verify participant registration with BOSS</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287450</blocked>
+  <estimated_time>0.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3158043</commentid>
+    <thetext>"skynet list" shows the running status of participants - it should also verify that the registered queue name is operational on RabbitMQ and that it is registered in BOSS.</thetext>
+  </long_desc>
+</bug>
+
+

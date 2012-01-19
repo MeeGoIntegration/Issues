@@ -1,0 +1,16 @@
+<bug>
+  <bug_id>281776</bug_id>
+  <short_desc>[TASK] Move python-django-testcoverage to gitorious and package as RPM</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <estimated_time>2.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3276002</commentid>
+    <thetext>python-django-coverage is currently only available in dvcs.p.m.o
+git@dvcs.projects.maemo.org:bifh/python-django-testcoverage
+
+and it only has Debian packaging</thetext>
+  </long_desc>
+</bug>
+
+

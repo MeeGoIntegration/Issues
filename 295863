@@ -1,0 +1,34 @@
+<bug>
+  <bug_id>295863</bug_id>
+  <short_desc>[TASK] [WORKFLOW] Allow source project repos to have publishing disabled</short_desc>
+  <bug_status>RESOLVED</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287705</blocked>
+  <estimated_time>3.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3475669</commentid>
+    <thetext>Our current workflow requires the source project of a request to have repo publishing enabled on all repos that are considered in the request (that is, those that are linked to the target project).
+
+If we drop this requirement then our users can save some space by disabling repo publishing on projects that don't need full repositories. (The package files are still available by querying OBS)
+
+The reason we have the requirement is so that we can check the repo published state to determine if building is complete, before running prechecks (including check_package_built_at_source). To drop it, we'll need some other way to do this.
+
+Comment from Islam: is_repo_published already knows when building is done even if the repo is unpublished. The problem is in the check_has_valid_repo participant.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3484362</commentid>
+    <thetext>tagged 0.24.1-1 and SR#4025</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3478527</commentid>
+    <thetext>To git@gitorious.org:meego-infrastructure-tools/boss-standard-workflow.git
+ * [new branch]      PMO295863-allow-publishing-disabled -&gt; PMO295863-allow-publishing-disabled</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3475712</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

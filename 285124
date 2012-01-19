@@ -1,0 +1,35 @@
+<bug>
+  <bug_id>285124</bug_id>
+  <short_desc>[TASK] Update OTS participant and include it in the standard workflow</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>283870</blocked>
+  <blocked>285159</blocked>
+  <estimated_time>15.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3328355</commentid>
+    <thetext>There is existing participant for OTS testing, but the status and suitability of that is unclear.
+
+This is would be the "send_to_ots" participant</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3357948</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3357947</commentid>
+    <thetext>Fixed typo in description.
+
+I added 5 hours to the estimate because this is one of the more complicated participants to write tests for, and it's also the only one that uses separate python modules.
+
+15 hours is what we seem to spend even on average participants so I don't think it's too high.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3328360</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

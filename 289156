@@ -1,0 +1,23 @@
+<bug>
+  <bug_id>289156</bug_id>
+  <short_desc>[FEA] [TASK] Allow override for target project in check_has_valid_repo and check_package_built_at_source</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <blocked>287705</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3392137</commentid>
+    <thetext>We have a user who wants to check that the source package successfully built against a more restrictive project than the one being promoted to.
+
+The straightforward fix to allow this would be to accept a :target or :targetproject parameter that overrides the selection of the target project.
+
+Build trial group might also need this workaround.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3459403</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

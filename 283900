@@ -1,0 +1,66 @@
+<bug>
+  <bug_id>283900</bug_id>
+  <short_desc>check_yaml_matches_spec produces SyntaxError: no element found: line 1, column 0</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>major</bug_severity>
+  <dependson>290803</dependson>
+  <blocked>283901</blocked>
+  <blocked>289232</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3308888</commentid>
+    <thetext>==&gt; check_yaml_matches_spec/log/main/current &lt;==
+2011-09-22 20:43:12.605160500 Exception
+2011-09-22 20:43:12.605344500 ------------------------------------------------------------
+2011-09-22 20:43:12.605473500 Traceback (most recent call last):
+2011-09-22 20:43:12.605588500   File "/usr/lib/pymodules/python2.6/RuoteAMQP/participant.py", line 76, in workitem_callback
+2011-09-22 20:43:12.606030500     self.consume()
+2011-09-22 20:43:12.606152500   File "/usr/lib/python2.6/dist-packages/SkyNET/Exo.py", line 45, in consume
+2011-09-22 20:43:12.606438500     self.exo.handler.handle_wi(self.workitem)
+2011-09-22 20:43:12.606548500   File "participant_logic.py", line 188, in handle_wi
+2011-09-22 20:43:12.606806500     result = result and self.__handle_action(wid, action)
+2011-09-22 20:43:12.606916500   File "participant_logic.py", line 203, in __handle_action
+2011-09-22 20:43:12.607045500     files = self.obs.getPackageFileList(project, package, revision)
+2011-09-22 20:43:12.607180500   File "/usr/lib/pymodules/python2.6/buildservice/api.py", line 882, in getPackageFileList
+2011-09-22 20:43:12.607754500     expand=True, revision=revision)
+2011-09-22 20:43:12.607859500   File "/usr/lib/python2.6/dist-packages/osc/core.py", line 3009, in meta_get_filelist
+2011-09-22 20:43:12.610705500     root = ET.parse(f).getroot()
+2011-09-22 20:43:12.610815500   File "&lt;string&gt;", line 45, in parse
+2011-09-22 20:43:12.610920500   File "&lt;string&gt;", line 32, in parse
+2011-09-22 20:43:12.611053500 SyntaxError: no element found: line 1, column 0
+2011-09-22 20:43:12.611148500 ------------------------------------------------------------
+2011-09-22 20:43:12.611258500 Note: for information only. Workitem returning with result=false</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3437466</commentid>
+    <thetext>This is an intermittent bug which has become even more intermittent with OBS 2.3, but still occurs occasionally. Islam said he sees it about once per week.
+
+For some reason OBS sometimes responds with a success code but an empty body, and then osc (or python-buildservice) fails when trying to parse the response.
+
+Upstream won't accept this bug without further debugging info since they can't reproduce it.
+
+We should fix it by having osc retry when it gets an empty response, and in such a case it should log the full transaction (request and response, plus headers for both) so that we can submit a proper bug upstream. (If it gets an empty response twice in a row then it should give up and pass it back to the caller, to avoid hammering the server.)
+
+Complication: osc's http functions may not know whether a response is expected or not. I think OBS is supposed to respond with at least a status element with code=ok if it has nothing else to say, but this should be verified.
+
+Estimated by Richard</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3372044</commentid>
+    <thetext>We need to check if this is reproducible</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3324221</commentid>
+    <thetext>This appears as an osc error sometimes.
+
+I think it warrants a catch and retry in the buildservice library</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3318827</commentid>
+    <thetext>Wasn't this just a configuration error that's now solved? The exception happened only once, when the process was being set up.
+
+I don't think it can be debugged if it's not happening anymore. Robogrator logs from that timeframe are gone so we don't even know what process definition was running.</thetext>
+  </long_desc>
+</bug>
+
+

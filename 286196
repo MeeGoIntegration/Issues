@@ -1,0 +1,84 @@
+<bug>
+  <bug_id>286196</bug_id>
+  <short_desc>[BUG] feed_revs produces caches links unnecessarily</short_desc>
+  <bug_status>REOPENED</bug_status>
+  <bug_severity>normal</bug_severity>
+  <blocked>285172</blocked>
+  <estimated_time>8.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3350191</commentid>
+    <thetext>When feed_revs is run on REPO_PUBLISH time it has a race condition on the second REPO_PUBLISH event (which my OBS produces for  still unknown reason) it produces 404 as the repository is not available for feed_revs. This is a race condition and will fail in the future.
+
+
+Solutions:
+
+Wait for a second in the process, don't know if this is possible.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3372010</commentid>
+    <thetext>Re-estimated with regards to Richard's fix proposal in Comment#7. If the re-estimation messed up the sprint planning we will create a new item for this issue.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3365747</commentid>
+    <thetext>I understand it better now that I saw the fix:
+
++    LinkDigger.links = set()
++    LinkDigger.checked = set()
+
+So feed_revs wasn't clearing its old list of links, between workitems, and that was the problem.
+
+I think the real problem is in the LinkDigger class, though, which confuses its own class with its instances. "links" and "checked" should not be class attributes at all. The patch above just hides the problem.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3355652</commentid>
+    <thetext>Fixed in :
+
+To git@gitorious.org:meego-infrastructure-tools/revs.git                                                                                                                                                                                     
+   3bcaf98..cafa853  pmo283463 -&gt; pmo283463</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3353516</commentid>
+    <thetext>More details, its about caching:
+
+2011-10-13 16:49:03.861853500 set([u'http://obs.lan:82/Project:/Trunk/openSUSE_11.4//repodata//ab19121398a000666aaf9b1504a83d8f7af2c5eb9c336b58b9d751391e17badc-primary.xml.gz'])
+2011-10-13 16:49:03.862018500 http://obs.lan:82/Project:/Trunk/openSUSE_11.4//repodata//ab19121398a000666aaf9b1504a83d8f7af2c5eb9c336b58b9d751391e17badc-primary.xml.gz
+
+2011-10-13 17:15:04.425346500 set([u'http://obs.lan:82/Project:/Trunk/openSUSE_11.4//repodata//d7dd5599faa10af4f0bd918eb00e87ec8aa6f16c9d8a62a2a6cf985af8f1a738-other.xml.gz', u'http://obs.lan:82/Project:/Trunk/openSUSE_11.4//repodata//6478469984908109c73dccf9afff49c639530a6c0f28bce496cf3eeb5f4d294d-primary.xml.gz', u'http://obs.lan:82/Project:/Trunk/openSUSE_11.4//repodata//8f2dd4056ee4f9be2484fe48659dafb3e5e43809043430dcc1cfb25e4f710605-primary.xml.gz'])
+2011-10-13 17:15:04.425551500 http://obs.lan:82/Project:/Trunk/openSUSE_11.4//repodata//d7dd5599faa10af4f0bd918eb00e87ec8aa6f16c9d8a62a2a6cf985af8f1a738-other.xml.gz
+
+
+This means the links sets are somehow staying the same for all the time, during the participant execution</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3352336</commentid>
+    <thetext>More detailed description:
+
+When feed_revs is activated, it gets the URL to the repository from its database. Complete URL is constructed from that URL and the repository which was published. Then it digs through the URLs and checks for files that end with .primary.xml.gz or .other.xml.gz.
+
+When it finds the files, it will download them. The problem with OBS is that it publishes twice, meaning that the files change during the scanning process, before downloading. This of course results in a 404 when feed_revs is trying to download an old file from the previous publish and the latter publish is not even finished yet.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3352308</commentid>
+    <thetext>Neither waiting nor polling works..</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3351476</commentid>
+    <thetext>Waiting for a second is as easy as:
+   wait '1s'
+
+It's probably better to poll though. Compare with the "Wait for trial build" loop in the standard process:
+
+      repeat :timeout =&gt; '30m', :on_timeout =&gt; 'error' do
+        report_event :msg =&gt; 'Is repo published?'
+        is_repo_published :project =&gt; '${build_trial.project}'
+        _break :if =&gt; '${f:__result__}'
+        wait '30s'
+      end</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3350192</commentid>
+    <thetext>Marking as sprint bug.</thetext>
+  </long_desc>
+</bug>
+
+

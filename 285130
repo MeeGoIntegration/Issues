@@ -1,0 +1,15 @@
+<bug>
+  <bug_id>285130</bug_id>
+  <short_desc>[TASK] Update the participant that includes tests in an image</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>283870</blocked>
+  <blocked>285159</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3328376</commentid>
+    <thetext>There is define_image participant, but that needs review, refinement and testing that it fits our needs</thetext>
+  </long_desc>
+</bug>
+
+

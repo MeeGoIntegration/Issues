@@ -1,0 +1,43 @@
+<bug>
+  <bug_id>287291</bug_id>
+  <short_desc>[BUG] Image file link on imager takes to home page</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>normal</bug_severity>
+  <estimated_time>2.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3364863</commentid>
+    <thetext>Test-Infra
+==========
+Testing OBS:
+Testing Setup: mint2 system
+Installed Machines: vms (Debian 6)
+
+SetUp
+=====
+ - Repo home:kusvii:W422011 (Debian)
+ - OBS cobs
+ - Install img-core img-ks img-web img-worker on same vm
+ - Make necessary configurations /etc/skynet
+ - Enable &amp; Register the following participant
+    build_image
+    build_ks
+    request_image
+    update_image_status   
+ - Open IMG on browser &amp; Login
+   Submit a image 
+ - After the image is done (success or failure)
+ - Click on files link of that image
+
+Expected Behaviour
+==================
+ The web page should display all files generated for the built/not built image
+
+Actual Behaviour
+================
+ Goes to Front Page.
+
+directory listing is not enabled!</thetext>
+  </long_desc>
+</bug>
+
+

@@ -1,0 +1,73 @@
+<bug>
+  <bug_id>272007</bug_id>
+  <short_desc>[FEA] [TASK] List all components of the system, where they come from and who maintains them</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <dependson>272015</dependson>
+  <dependson>272065</dependson>
+  <blocked>287247</blocked>
+  <estimated_time>5.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3137101</commentid>
+    <thetext>As an architect (developer), I want to maintain a list of all packages and repositories used by the system, so that a clear understanding of the system may be shared by the team, deployers, and other stakeholders.
+
+Added by Richard:
+
+This list should includes all code we maintain, and all packages we use that are not normal parts of the platforms we support.
+
+The list should focus on code repositories, where they are and whether they are maintained by us or are upstream to us.
+
+Listing all the binary package names is not so interesting.
+
+In the mintutils package there is a script that gets almost all of our code. Making that script complete could be an alternative to a wiki page.
+
+We also need a list of the build dependencies and where they came from.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3468347</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3468338</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3389911</commentid>
+    <thetext>Estimated</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3364245</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3364244</commentid>
+    <thetext>Elaborated on the description;
+placed in backlog under "MINT documentation"</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3161671</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3161670</commentid>
+    <thetext>removed typo</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3139021</commentid>
+    <thetext>Fix dependency/blocks I hope</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3138697</commentid>
+    <thetext>set as feature because all action comes from dependent tasks</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3137473</commentid>
+    <thetext>task</thetext>
+  </long_desc>
+</bug>
+
+

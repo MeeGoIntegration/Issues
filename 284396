@@ -1,0 +1,37 @@
+<bug>
+  <bug_id>284396</bug_id>
+  <short_desc>[TASK] Review participants for trust issues</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287495</blocked>
+  <estimated_time>20.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3315338</commentid>
+    <thetext>We need to be careful about incoming data in the workitem fields. The process definition is flexible and we can't be sure that all of it comes from trusted admins.
+
+We should review all current participants with an eye open for:
+ - use of workitem data to construct filenames
+ - use of workitem data on command lines that go through the shell
+ - passing of workitem data to helper programs that might not be careful with it
+ - inclusion of unquoted workitem data in submissions to other systems
+   (for example as header fields or snippets of xml)
+
+In addition, if we unpack an archive that we can't necessarily trust, we should be careful about what's inside it. Check for:
+ - opening files that might be symlinks
+ - traversing pathnames that might be symlinks
+
+The scope of the task is low level security: is it possible to feed in a workitem that will take over the build system or expose sensitive data?
+
+Questions of authorization for normal operations are a different problem.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3315375</commentid>
+    <thetext>Estimated based on an estimate of 2000 lines to review and a wild guess of 100 lines per hour.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3315359</commentid>
+    <thetext>File new bugs for any issues found, if they're large enough to warrant it. Small fixes can be done as part of this bug.</thetext>
+  </long_desc>
+</bug>
+
+

@@ -1,0 +1,49 @@
+<bug>
+  <bug_id>295702</bug_id>
+  <short_desc>[TASK] [CODE QUALITY] Design simple declarative syntax for workitem validation</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287218</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3474422</commentid>
+    <thetext>Timeboxed to 10 hours
+
+Design a way for participants to declare which fields and parameters they expect in their workitems, as well as constraints on their values (such as type, element type, string-matches-regexp, string-in-enum, that kind of thing).
+
+Design considerations:
+ - The declarations should be in the participants, so that people will
+   actually update them as the participant changes
+ - The Exo should guarantee that the constraints are met before the
+   participant gets the workitem.
+ - The declarations should be passive data structures, so that they
+   can be processed without running participant-specific code.
+ - The syntax should support concepts like "integer as string" and
+   "list as string" because ruote often passes stringified parameters
+   like that.
+
+Possibilities:
+ - Declaring optional parameters may be useful for documentation,
+   and allows typechecking on those parameters
+ - Declaring output fields may be helpful in the future for
+   automated checking of compatibility between participants
+ - It may be possible to generate documentation from these declarations,
+   but don't let that complicate the basic design.
+ - Alternately, it may be possible parse the declarations from the docstring.
+
+The output of this task should be a document describing the
+syntax and suggested implementation, ready for discussion.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3482406</commentid>
+    <thetext>From pami :
+
+http://www.alexconrad.org/2012/01/make-validation-suck-less.html
+
+And the validictory JSON validation library seems quite promising
+
+https://github.com/sunlightlabs/validictory</thetext>
+  </long_desc>
+</bug>
+
+

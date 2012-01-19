@@ -1,0 +1,14 @@
+<bug>
+  <bug_id>287952</bug_id>
+  <short_desc>[FEA] Automatic registration of participants</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <blocked>287450</blocked>
+  <estimated_time>5.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3374112</commentid>
+    <thetext>Currently the participant registration is configured at "skynet install" time, so there's no more need for a separate registration command. It can be done automatically when the participant starts.</thetext>
+  </long_desc>
+</bug>
+
+

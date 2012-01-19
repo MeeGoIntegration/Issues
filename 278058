@@ -1,0 +1,34 @@
+<bug>
+  <bug_id>278058</bug_id>
+  <short_desc>[TASK] Remove remaining use of skynet make_participant</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287218</blocked>
+  <estimated_time>2.50</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3220560</commentid>
+    <thetext>make_participant was renamed install.
+
+Edit by Richard:
+
+Change all remaining uses of make_participant.
+Check boss-skynet, boss-python-skynet, revs and imger.
+Especially update docs.
+
+boss-standard-workflow is already clean, and the participant packages that went into boss-standard-workflow don't have to be updated.
+
+As a last step, remove support for skynet make_participant.
+(It's better to get that over with right away)</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3388591</commentid>
+    <thetext>Estimated</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3366792</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

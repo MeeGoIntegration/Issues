@@ -1,0 +1,16 @@
+<bug>
+  <bug_id>287706</bug_id>
+  <short_desc>[FEA] Make process definition configurable via project attributes</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <blocked>287705</blocked>
+  <estimated_time>0.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3370896</commentid>
+    <thetext>Pretty much everything that's currently in the .conf file for BOSS_handle_SR could instead be configured in project attributes in OBS. This would be a much better interface for our users.
+
+It will need more thorough security checking, though. One thing that will help is constraining the attribute values, for example prechecks should be chosen from a specific list.</thetext>
+  </long_desc>
+</bug>
+
+

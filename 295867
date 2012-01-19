@@ -1,0 +1,22 @@
+<bug>
+  <bug_id>295867</bug_id>
+  <short_desc>[TASK] [WORKFLOW] Move irc settings from process .conf to OBS project attributes</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>287705</blocked>
+  <estimated_time>15.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3475683</commentid>
+    <thetext>The purpose of this task is to show how MINT configuration can be moved from the .conf files into OBS. We start with just one bit: the irc settings.
+
+They should be configurable in OBS as project attributes, and when our process looks them up, it should be in such a way that the settings can be inherted from parent projects. That way, in the CE deployment, we can define them once on the CE project instead of once for every project.
+
+Tasks:
+ - Submit the schema for the namespace we use to OBS.
+  - This should be done automatically when upgrading packages.
+ - Document a way to set and edit these attributes on a project.
+ - Make the standard workflow look them up and use them.</thetext>
+  </long_desc>
+</bug>
+
+

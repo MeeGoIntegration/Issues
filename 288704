@@ -1,0 +1,32 @@
+<bug>
+  <bug_id>288704</bug_id>
+  <short_desc>[TASK] build images for multiple repositories</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>285068</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3385188</commentid>
+    <thetext>the process definition needs to be adapted to build images for each supported repository.
+
+Currently the imger participant expects to get all the info describing the image in a workitem dictionary (under 'image'). That aspect probably shouldn't change. Instead, the process definition should launch an imger with the right data for each repository</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3467442</commentid>
+    <thetext>*** Bug 292936 has been marked as a duplicate of this bug. ***</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3467440</commentid>
+    <thetext>Notes:
+
+ - remember that a repository can contain multiple architectures so there might be multiple image builds for one repository
+ - the workitem fields for excluding certain repos and archs by name should be honored. (See the build trial participants for code that does this.)</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3386366</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

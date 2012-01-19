@@ -1,0 +1,29 @@
+<bug>
+  <bug_id>295287</bug_id>
+  <short_desc>[TASK] Package new mic for use with imager</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>285068</blocked>
+  <estimated_time>2.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3468267</commentid>
+    <thetext>Islam knows how to do this.
+
+Marko's fork of the code:
+
+https://github.com/saukko/mic
+
+The original code:
+
+http://build.meego.com/package/files?package=mic&amp;project=devel%3Atools%3Abuilding
+
+Fixing Bug 291423 is part of this task's scope.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3468351</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

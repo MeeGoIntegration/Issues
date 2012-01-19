@@ -1,0 +1,26 @@
+<bug>
+  <bug_id>285122</bug_id>
+  <short_desc>[TASK] Make a test package for use in system testing.</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>283870</blocked>
+  <blocked>285159</blocked>
+  <estimated_time>3.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3328336</commentid>
+    <thetext>For verifying the app test functionality, select a suitable app with some tests to run.
+
+Make a package of it ready for use in demonstrations and testing.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3364055</commentid>
+    <thetext>*** Bug 283872 has been marked as a duplicate of this bug. ***</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3357935</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

@@ -1,0 +1,25 @@
+<bug>
+  <bug_id>283870</bug_id>
+  <short_desc>[FEA] OTS End-to-End</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <dependson>283871</dependson>
+  <dependson>285118</dependson>
+  <dependson>285122</dependson>
+  <dependson>285124</dependson>
+  <dependson>285130</dependson>
+  <dependson>283872</dependson>
+  <dependson>285120</dependson>
+  <blocked>287277</blocked>
+  <estimated_time>0.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3308407</commentid>
+    <thetext>As release manager, I want to know that all submissions into trunk will pass some basic test automation, i.e. creating an image, booting the device, and running basic applications</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3364048</commentid>
+    <thetext>Consolidated OTS integration into one feature</thetext>
+  </long_desc>
+</bug>
+
+

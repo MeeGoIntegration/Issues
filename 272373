@@ -1,0 +1,29 @@
+<bug>
+  <bug_id>272373</bug_id>
+  <short_desc>[TASK] osc plugin to allow a comparison of packages and versions between 2 obs projects</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>274618</blocked>
+  <estimated_time>2.50</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3140853</commentid>
+    <thetext>Something like :
+  ocs prjcmp Project:MINT:RC Project:MINT:Testing
+
+should tell me about packages variations between the projects:
+* same
+* differ (show versions)
+* present in only one (which)</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3472278</commentid>
+    <thetext>https://gitorious.org/meego-developer-edition-for-n900/upstreamchecker/blobs/master/upstreamchecker.py  may be helpful here.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3467419</commentid>
+    <thetext>This sounds like a nice packaging for one of the scripts Vivek already created.
+Moving it under the metabug for the MINT release process</thetext>
+  </long_desc>
+</bug>
+
+

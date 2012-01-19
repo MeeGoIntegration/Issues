@@ -1,0 +1,16 @@
+<bug>
+  <bug_id>287951</bug_id>
+  <short_desc>[FEA] Option for exclusive registration when registering participants</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>feature</bug_severity>
+  <blocked>287450</blocked>
+  <estimated_time>0.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3374088</commentid>
+    <thetext>It would be useful to mark certain participants (for example robogrator) as having exclusive access to their queue, so that only one instance can be listening at a time. Having more than one robogrator just causes problems.
+
+There is an amqp option for exclusive queues.</thetext>
+  </long_desc>
+</bug>
+
+

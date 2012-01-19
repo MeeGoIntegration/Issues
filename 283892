@@ -1,0 +1,26 @@
+<bug>
+  <bug_id>283892</bug_id>
+  <short_desc>[BUG] skynet is too verbose when an unknown command is given</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>minor</bug_severity>
+  <estimated_time>1.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3308776</commentid>
+    <thetext>Error like:
+
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+A package failed to install.  Trying to recover:
+Setting up boss-participant-defineimage (0.5.1-1) ...
+Usage: /usr/bin/skynet {enable|disable|start|stop|reload|manual|rebuild|status|log|install|uninstall|register|unregister|help} &lt;exo&gt;
+
+&lt;snip 64 lines of unhelpful usage()&gt;
+
+dpkg: error processing boss-participant-defineimage (--configure):
+ subprocess installed post-installation script returned error exit status 3
+
+
+It may help to echo the command line?</thetext>
+  </long_desc>
+</bug>
+
+

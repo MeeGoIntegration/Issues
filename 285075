@@ -1,0 +1,27 @@
+<bug>
+  <bug_id>285075</bug_id>
+  <short_desc>[TASK] build images for multiple configurations</short_desc>
+  <bug_status>NEW</bug_status>
+  <bug_severity>task</bug_severity>
+  <blocked>285068</blocked>
+  <blocked>285152</blocked>
+  <estimated_time>10.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3328106</commentid>
+    <thetext>There are usually multiple configurations of interest for a project, and it will make sense to build and test more than one as part of handling a submit-request.
+
+The purpose of this task is to define an interface (probably a set of workitem fields) that allow the process definition to detect this and start multiple concurrent image builds. This interface should then be demonstrated and tested by writing a process definition that does this.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3468276</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3328109</commentid>
+    <thetext>The feature's description has been updated.
+</thetext>
+  </long_desc>
+</bug>
+
+

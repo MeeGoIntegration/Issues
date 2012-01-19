@@ -1,0 +1,24 @@
+<bug>
+  <bug_id>295862</bug_id>
+  <short_desc>[TASK] [CE] In email template, put username of user who accepted a review</short_desc>
+  <bug_status>RESOLVED</bug_status>
+  <bug_severity>task</bug_severity>
+  <estimated_time>2.00</estimated_time>
+  <long_desc isprivate="0">
+    <commentid>3475659</commentid>
+    <thetext>Currently if a review was sent to a project or group, the email only contains the project or group name. The specific username is available in the request history but that's not shown.
+
+Task: Put the name of the user who accepted a review in the email notification somewhere.</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3484363</commentid>
+    <thetext>tagged 0.24.1-1 and SR#4025</thetext>
+  </long_desc>
+  <long_desc isprivate="0">
+    <commentid>3478525</commentid>
+    <thetext>To git@gitorious.org:meego-infrastructure-tools/boss-standard-workflow.git
+ * [new branch]      PMO295862-review-user -&gt; PMO295862-review-user</thetext>
+  </long_desc>
+</bug>
+
+
